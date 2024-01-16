@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "e-shop-tutorial",
+  "name": "ecommerce-app-2023",
   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
 }

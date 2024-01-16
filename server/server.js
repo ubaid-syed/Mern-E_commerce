@@ -29,7 +29,7 @@ app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.get("/test", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome to ecommerce app 2023</h1>");
 });
 
 //PORT
