@@ -6,7 +6,7 @@ import { useCart } from "../context/cart";
 import axios from "axios";
 import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
-import { TbReload } from "react-icons/tb";
+// import { TbReload } from "react-icons/tb";
 import "../styles/Homepage.css";
 
 const HomePage = () => {
@@ -206,14 +206,7 @@ const HomePage = () => {
                   setPage(page + 1);
                 }}
               >
-                {loading ? (
-                  "Loading ..."
-                ) : (
-                  <>
-                    {" "}
-                    Loadmore <TbReload />
-                  </>
-                )}
+                {loading ? "Loading ..." : <> Loadmore</>}
               </button>
             )}
           </div>
