@@ -3,14 +3,14 @@ import { useAuth } from "../../context/auth";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
-
+import { backend_url } from "../../config";
 export default function PrivateRoute() {
   const [ok, setOk] = useState(false);
   const [auth, setAuth] = useAuth();
 
   useEffect(() => {
     const authCheck = async () => {
-      const res = await axios.get("/api/v1/auth/admin-auth");
+      const res = await axios.get(`${backend_url}/api/v1/auth/admin-auth`);
       if (res.data.ok) {
         setOk(true);
       } else {
